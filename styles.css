@@ -3,13 +3,43 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.scoreboard {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playerInfo {
+    margin-top: 50px;
+}
+
+#restart {
+    margin-top: 70px;
+    height: 50px;
+    width: 100px;
+    background-color: blueviolet;
+    color: white;
+}
+
+#restart:hover {
+    color: black;
+    background-color: lightblue;
+}
 
 .board {
     height: 700px;
     width: 700px;
     border: 1px solid black;
-    margin: 0 auto;
+    margin-right: 460px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
